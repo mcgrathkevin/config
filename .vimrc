@@ -4,6 +4,10 @@ syntax on
 set bg=dark
 autocmd vimenter * ++nested colorscheme gruvbox
 
+" Undo
+set undodir=~/.vim/undo-dir
+set undofile
+
 " Autocomplete"
 set tags+=./tags
 set tags+=/usr/local/include/tags
@@ -11,12 +15,15 @@ set tags+=/usr/local/lib/tags
 set completeopt=menuone,longest
 set shortmess+=c
 set backspace=indent,eol,start
+
 " Spaces & Tabs 
 set tabstop=2           " number of visual spaces per TAB
 
 set softtabstop=2       " number of spaces in tab when editing
 
 set expandtab           " tabs are spaces
+
+set shiftwidth=2
 
 set modelines=2
 
